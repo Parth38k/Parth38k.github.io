@@ -4,81 +4,116 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Parth Kabrawala | Finance Professional</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f6fa;
-    color: #1a1a1a;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6fb;
+    color: #1c1c1c;
 }
 
-header {
-    background: linear-gradient(135deg, #0a192f, #112240);
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #0a192f, #1f3c88);
     color: white;
-    text-align: center;
-    padding: 60px 20px;
+    flex-wrap: wrap;
 }
 
-header img {
-    width: 160px;
-    border-radius: 50%;
-    border: 4px solid white;
-    margin-bottom: 20px;
+.hero-text {
+    flex: 1;
+    min-width: 300px;
 }
 
-header h1 {
-    margin: 10px 0;
-    font-size: 34px;
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
 }
 
-header p {
+.hero-text p {
     font-size: 18px;
     opacity: 0.9;
 }
 
+.hero-img {
+    flex: 1;
+    text-align: center;
+    min-width: 250px;
+}
+
+.hero-img img {
+    width: 220px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 40px rgba(255,255,255,0.4);
+    transition: 0.3s;
+}
+
+.hero-img img:hover {
+    transform: scale(1.05);
+}
+
 .button {
     display: inline-block;
-    padding: 10px 22px;
-    margin: 8px;
-    background-color: #1f3c88;
-    color: white;
+    padding: 12px 24px;
+    margin: 10px 10px 0 0;
+    background: white;
+    color: #1f3c88;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 30px;
+    font-weight: 600;
     transition: 0.3s;
 }
 
 .button:hover {
-    background-color: #163172;
+    background: #ffd369;
+    color: #0a192f;
 }
 
 section {
-    padding: 50px 10%;
+    padding: 70px 12%;
 }
 
 h2 {
-    border-left: 5px solid #1f3c88;
-    padding-left: 10px;
-    margin-bottom: 25px;
+    font-size: 28px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+h2:after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #1f3c88;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
 }
 
 .card {
     background: white;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s;
 }
 
-.card h3 {
-    margin-top: 0;
+.card:hover {
+    transform: translateY(-5px);
 }
 
 footer {
-    background-color: #0a192f;
+    background: #0a192f;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 
 </style>
@@ -86,77 +121,65 @@ footer {
 
 <body>
 
-<header>
-    <img src="profile.jpg" alt="Profile Photo">
+<div class="hero">
+
+<div class="hero-text">
     <h1>Parth Kabrawala</h1>
-    <p>MSc Investments | CFA Level II Cleared | Equity Research & Asset Management Enthusiast</p>
+    <p>MSc Investments | CFA Level II Cleared | Equity Research & Asset Management</p>
+
     <a href="resume.pdf" class="button">Download Resume</a>
     <a href="https://www.linkedin.com/in/parthk38" class="button" target="_blank">LinkedIn</a>
-    <a href="https://github.com/Parth38k/Parth-s-Projects" class="button" target="_blank">GitHub Projects</a>
-</header>
+    <a href="https://github.com/Parth38k/Parth-s-Projects" class="button" target="_blank">GitHub</a>
+</div>
+
+<div class="hero-img">
+    <img src="profile.jpg" alt="Profile Photo">
+</div>
+
+</div>
 
 <section>
 <h2>About Me</h2>
+<div class="card">
 <p>
-Finance professional with a strong foundation in equity research, financial modelling, and investment analysis. 
+Finance professional specialising in equity research, valuation modelling, and investment analysis. 
 Currently pursuing MSc Investments at the University of Birmingham and cleared CFA Levels I & II on first attempt. 
-Experienced in building valuation models, analysing global markets, and delivering data-driven investment recommendations.
+Experienced in DCF modelling, sector analysis, and delivering data-driven insights for portfolio decision-making.
 </p>
+</div>
 </section>
 
 <section>
-<h2>Work Experience</h2>
+<h2>Experience</h2>
 
 <div class="card">
 <h3>Equity Research Analyst – Sanghvi Wealth Management</h3>
-<p>Managed research support for £17M AUM portfolios. Built DCF, relative valuation, and sensitivity models. Analysed banking, FMCG, and energy sectors to deliver actionable insights.</p>
+<p>Supported £17M AUM portfolios through sector analysis, valuation modelling, and macro research insights.</p>
 </div>
 
 <div class="card">
 <h3>Articled Assistant – Sonali Dalal & Co.</h3>
-<p>Conducted statutory and tax audits, prepared 100+ GST & tax filings, reconciled financial statements, and managed 20+ client accounts ensuring compliance and reporting accuracy.</p>
+<p>Conducted audits, tax compliance, financial reconciliations, and managed multiple corporate client accounts.</p>
 </div>
 
 </section>
 
 <section>
-<h2>Equity Research & Financial Models</h2>
+<h2>Key Projects</h2>
 
 <div class="card">
-<h3>Palantir Technologies – Equity Research Report</h3>
-<p>Prepared detailed asset management research report including valuation, risk analysis, and sector outlook.</p>
+<h3>Palantir Equity Research Report</h3>
+<p>Comprehensive valuation and strategic outlook analysis.</p>
 </div>
 
 <div class="card">
 <h3>DCF & Relative Valuation Models</h3>
-<p>Built integrated financial models forecasting revenue, WACC, free cash flow, and performing sensitivity analysis.</p>
+<p>Integrated three-statement financial models with sensitivity analysis.</p>
 </div>
 
 <div class="card">
-<h3>Python Time Series Analysis Projects</h3>
-<p>Developed time series forecasting models to assess asset performance across sectors.</p>
-</div>
-
-<!-- COPY THIS BLOCK BELOW TO ADD NEW PROJECTS -->
-
-</section>
-
-<section>
-<h2>Certifications & Professional Development</h2>
-
-<div class="card">
-<h3>Chartered Financial Analyst (CFA)</h3>
-<p>Cleared Levels I & II on first attempt. Expertise in equity valuation, portfolio management, and financial modelling.</p>
-</div>
-
-<div class="card">
-<h3>Bank of America – Investment Banking Simulation</h3>
-<p>Completed IB virtual experience focusing on valuation and transaction analysis.</p>
-</div>
-
-<div class="card">
-<h3>Financial Modelling & Advanced IT – Professional Courses</h3>
-<p>Advanced modelling techniques and technical financial analysis tools.</p>
+<h3>Python Time Series Forecasting</h3>
+<p>Developed forecasting models for asset performance analysis.</p>
 </div>
 
 </section>
@@ -164,9 +187,8 @@ Experienced in building valuation models, analysing global markets, and deliveri
 <section>
 <h2>Skills</h2>
 <div class="card">
-<p><strong>Technical:</strong> Three-Statement Analysis, DCF Valuation, Relative Valuation, Excel, Power BI, Python</p>
-<p><strong>Core:</strong> Equity Research, Investment Analysis, Financial Reporting, Market Analysis</p>
-<p><strong>Languages:</strong> English, Hindi, Gujarati</p>
+<p><strong>Technical:</strong> DCF, Relative Valuation, Three-Statement Analysis, Excel, Power BI, Python</p>
+<p><strong>Core:</strong> Equity Research, Financial Analysis, Portfolio Management</p>
 </div>
 </section>
 
